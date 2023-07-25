@@ -1,8 +1,10 @@
+"""Module provides BRB Message actions"""
 import time
+from pynput.keyboard import Key, Controller
 from threader import Threader
-from pynput.keyboard import Controller, Key
 
 class BRBMessage(Threader):
+    """BRB Message Thread"""
     def __init__(self, message, num_dots) -> None:
         super(BRBMessage, self).__init__()
         self.message = message
