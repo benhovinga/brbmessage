@@ -18,7 +18,7 @@ class BRBMessage(Threader):
                     if not self.running:
                         break
                     time.sleep(0.25)
-                    keyboard.type(i)
+                    keyboard.tap(i)
                 # Type out dots
                 for i in range(self.num_dots):
                     if not self.running:
