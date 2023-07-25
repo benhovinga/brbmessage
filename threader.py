@@ -1,4 +1,3 @@
-import time
 import threading
 
 class Threader(threading.Thread):
@@ -19,9 +18,3 @@ class Threader(threading.Thread):
         self.stop_typing()
         self.thread_running = False
         print(f"👋 Exiting {self.name}")
-
-    def run(self):
-        while self.thread_running:
-            while self.typing:
-                pass
-            time.sleep(0.1)
