@@ -6,7 +6,7 @@ from threader import Threader
 class BRBMessage(Threader):
     """BRB Message Thread"""
     def __init__(self, message, num_dots) -> None:
-        super(BRBMessage, self).__init__()
+        super().__init__()
         self.message = message
         self.num_dots = num_dots
         self.name = "BRB Message"

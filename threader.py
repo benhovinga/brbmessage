@@ -4,7 +4,7 @@ import threading
 class Threader(threading.Thread):
     """Thread Template"""
     def __init__(self) -> None:
-        super(Threader, self).__init__()
+        super().__init__()
         self.running = False
         self.thread_running = True
 
