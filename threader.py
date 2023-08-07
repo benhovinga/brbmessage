@@ -1,6 +1,7 @@
 """Module providing a Thread template"""
 import threading
 
+
 class Threader(threading.Thread):
     """Thread Template"""
     def __init__(self) -> None:

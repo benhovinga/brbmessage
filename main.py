@@ -7,6 +7,7 @@ STOP_KEY = '<ctrl>+<alt>+i'
 MESSAGE = 'Be right back. Brewing coffee'
 NUM_DOTS = 10
 
+
 def main():
     """Main Program"""
     typing_thread = BRBMessage(MESSAGE, NUM_DOTS)
@@ -29,6 +30,7 @@ def main():
             START_KEY: on_start_hotkey,
             STOP_KEY: on_stop_hotkey}) as listener:
         listener.join()
+
 
 if __name__ == "__main__":
     main()
