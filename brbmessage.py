@@ -3,6 +3,7 @@ import time
 from pynput.keyboard import Key, Controller
 from threader import Threader
 
+
 class BRBMessage(Threader):
     """BRB Message Thread"""
     def __init__(self, message, num_dots) -> None:
